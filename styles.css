@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.navbar {
+    margin-right: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-right: 70px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+}
+
+.submenu, .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #004080;
+    list-style: none;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu-content {
+    left: 100%;
+    top: 0;
+}
+
+.menu li:hover > .submenu, 
+.submenu li:hover > .submenu-content {
+    display: block;
+}
+
+.submenu {
+    z-index: 100;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu a, .submenu-content a {
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Hero */
+.hero {
+    background-color: #00264d;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Contenido */
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+.content-block h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00509e;
+}
+
+.content-block p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
